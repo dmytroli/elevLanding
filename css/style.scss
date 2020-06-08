@@ -255,11 +255,12 @@ ul {
 	z-index: 2;
 }
 
-$main-header__image-width: 175px;
-$main-header__image-height: $main-header__image-width * 0.287;
+/*$main-header__image-width: 175px;
+$main-header__image-height: $main-header__image-width * 0.287;*/
 .main-header__image {
-	width: $main-header__image-width;
-	height: $main-header__image-height;
+	width: 13%;
+/*	width: $main-header__image-width;
+	height: $main-header__image-height;*/
 	margin-right: 50px;
 	margin-top: 0;
 }
@@ -333,7 +334,7 @@ $main-header__image-height: $main-header__image-width * 0.287;
 .main-header__contacts {
 	position: relative;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 	flex-wrap: wrap;
 	width: 35%;
@@ -353,11 +354,21 @@ $main-header__image-height: $main-header__image-width * 0.287;
 .main-header__phone {
 	position: relative;
 	@include lightText;
+	padding-left: 35px;
 	color: #201966;
 	font-weight: bold;
 	font-size: 22px;
-	width: 100%;
+	/*width: 100%;*/
 	margin: 0;
+}
+
+.main-header__icon-phone {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 20px;
+	height: auto;
+	transform: translateY(-50%);
 }
 
 .main-header__phone-image {
@@ -417,7 +428,7 @@ $main-header__image-height: $main-header__image-width * 0.287;
 
 	padding: 20px;
 	margin: 0 auto;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 	z-index: 3;
 	&::before {
 		position: absolute;
@@ -442,25 +453,98 @@ $main-header__image-height: $main-header__image-width * 0.287;
 }
 
 .production__list {
-	border-bottom: 1px solid $site-color;
+	display: flex;	
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: center;
+	flex-wrap: wrap;
+
 }
 
+$production-width: 250px;
+$production-height: $production-width;
 .production__item {
-	position: relative;
-	display: flex;
+/*	position: relative;*/
+/*	display: flex;
 	justify-content: space-between;
-	flex-wrap: nowrap;
+	flex-wrap: nowrap;*/
 
-	width: 100%;
-	padding: 15px;
-	padding-bottom: 80px;
-	margin-bottom: 0;
+	width: $production-width;
+
+	/*padding-bottom: 20px;*/
+	margin-bottom: 50px;
 	box-shadow: none;
+	transform: scale(1);
 	transition: all, 0.8s;
 	background-color: #fff;
 	z-index: 3;
+	&:hover .production__text {
+		display: flex;
+	}
+	&:hover {
+		box-shadow: 0 0 10px gray;
+		transform: scale(1.02);
+	}
 }
 
+.production__link {
+	display: block;
+	width: $production-width;
+	box-sizing: border-box;
+}
+
+.production__imageWrapp {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: $production-width;
+	height: $production-height;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.production__text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	font-family: "OpenSans-Regular", sans-serif;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: rgba($site-color, 0.8%);
+	color: #fff;
+}
+
+/*.production__text--show {
+	display: flex;
+}*/
+
+.production__image {
+	height: 100%;
+}
+
+.production__subtitle {
+	display: block;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: $site-color;
+	font-family: "OpenSans-Regular", sans-serif;
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	box-sizing: border-box;
+	
+}
 
 /*shnek images*/
 
@@ -638,7 +722,7 @@ $main-header__image-height: $main-header__image-width * 0.287;
 	/*margin-top: -100px;*/
 	width: 90%;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .advantages__list {

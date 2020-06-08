@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap" rel="stylesheet">
 
 	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="icon" href="img/icon.png" type="img/png">
 
 	<link rel="stylesheet" href="css/style.css">
@@ -26,7 +26,7 @@
 	
 	<header class="main-header">
 			<div class="main-header__title-wrapp">
-				<img src="img/logo7.png" alt="image title" class="main-header__image">
+				<img src="img/logo-elev9.png" alt="image title" class="main-header__image">
 				<!-- <h1 class="title title-site">Назва вашого підприємства</h1> -->
 				<nav class="main-navigation">
 					<button class="mobile-buttonMenu">
@@ -41,8 +41,9 @@
 					</ul>
 					<div class="main-header__contacts">
 						<!-- <p class="main-header__mail">E-mail: mail@ukr.net</p> -->
-						<p class="main-header__phone">
-							<!-- <img src="img/phone.png" alt="phone" class="main-header__phone-image"> -->38067 547 08 81 </p>
+						<span class="main-header__phone">
+							<img src="img/call-1.png" alt="phone" class="main-header__icon-phone">
+							<!-- <img src="img/phone.png" alt="phone" class="main-header__phone-image"> -->38067 547 08 81 </span>
 							<!-- <p class="main-header__phone">
 							<img src="img/phone.png" alt="phone" class="main-header__phone-image">+380670000000 </p> -->
 					</div>
@@ -56,7 +57,7 @@
 		  	<div class="fotorama__wrapp-image" data-img="img/snek-s-big.jpg">
 		  		<div class="site-overlay">
 		  			<span class="fotorama__text">
-		  			Шнековіе спиралі
+		  			Шнекові спиралі
 		  		</span>
 		  		<span class=" fotorama__text fotorama__text--small">
 		  			Короткий текст що писує дану продукцію. Короткий текст що писує дану продукцію.Короткий текст що писує дану продукцію.Короткий текст що писує дану продукцію.Короткий текст що писує дану продукцію.
@@ -114,7 +115,7 @@
 		</div>
 	</section>
 	<main class="index-main">
-		<section class="advantages">
+		<section class="advantages wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
 			<ul class="advantages__list">
 				<li class="advantages__item">
 					<span class="advantages__round-decor">
@@ -147,19 +148,92 @@
 				</li>
 			</ul>
 		</section>
-		<section id="prod" class="production">
+		<section id="prod" class="production wow fadeInUp" data-wow-duration="2.5s" data-wow-delay="0.5s"">
 			<div class="container">
 			<h2 class="production__title">продукція нашого заводу</h2>
-				<div class="production__list">
-					<div class="production__item">
+				<ul class="production__list">
+					<li class="production__item">
+						<a href="#" class="production__link">
+							<span class="production__imageWrapp">
+								<img src="img/prod1.webp" alt="grop production" class="production__image">
+								<span class="production__text animated">Наша компания является непосредственным производителем сепараторов зерна БЦС 25, БЦС 50, БЦС 100. Всегда в наличии на складе.
+
+								Также у нас можно приобрести любые узлы и запчасти на БЦС. Осуществляем доставку запчастей по всей Украине собственным грузовым транспортом или службами доставки.</span>
+							</span>
+							
+							<span class="production__subtitle">Вибросепаратор БЦС</span>
+							
+						</a>
+					</li>
+					<li class="production__item">
+						<a href="#" class="production__link">
+							<span class="production__imageWrapp">
+								<img src="img/prod2.jpg" alt="grop production" class="production__image">
+								<span class="production__text animated">Нории или элеваторы – незаменимая часть процесса очистки и сушки зерна. Транспортеры, по своей сути, они используются в процессе очистки и сушки зерна.</span>
+							</span>	
+							
+							<span class="production__subtitle">Нории НПЗ зерновые ковшовые ленточные</span>
+						</a>	
+					</li>
+					<li class="production__item">
+						<a href="#" class="production__link">
+							<span class="production__imageWrapp">
+								<img src="img/prod3.jpg" alt="grop production" class="production__image">
+								<span class="production__text animated">Петкус ― это зерноочистительные машины универсального назначения. Они используются для предварительной, начальной и вторичной очистки зерна и семян, калибровки семян по размеру с помощью пробивных решет.</span>
+							</span>	
+							
+							<span class="production__subtitle">Зерноочистительные машины Петкус</span>
+							
+						</a>
+					</li>
+					<li class="production__item">
+						<a href="#" class="production__link">
+							<span class="production__imageWrapp">
+								<img src="img/prod4.webp" alt="grop production" class="production__image">
+								<span class="production__text animated">Аэродинамические зерновые сепараторы ИСМ применяются для сортировки семян любых сельхозкультур по удельному весу.</span>
+							</span>
+							
+							<span class="production__subtitle">Аэродинамический сепаратор</span>
+							
+						</a>
+					</li>
+					<li class="production__item">
+						<a href="#" class="production__link">
+							<span class="production__imageWrapp">
+								<img src="img/prod5.webp" alt="grop production" class="production__image">
+								<span class="production__text animated">Электродвигатель АИР 71 В8 0,25 кВт.  АИР 80 A8 0,37 кВт. АИР 80 В8 0,55 кВт</span>
+							</span>
+							
+							<span class="production__subtitle">Электродвигатели АИР</span>
+							
+						</a>
+					</li>
+					<li class="production__item">
+						<a href="#" class="production__link">
+							<span class="production__imageWrapp">
+								<img src="img/prod6.webp" alt="grop production" class="production__image">
+								<span class="production__text animated">Зернопровод (разновидность самотечного оборудования). Является  одним из основных элементом для погрузки зерна и других сыпучих веществ.
+								шибер, электро задвижки, фланец;
+
+								сектор поворотный, создает определенный угол поворота самотека;
+
+								одинарные, двойные и симметричные клапана, переходы, соединяющие трубы.</span>
+							</span>
+							
+							<span class="production__subtitle">Самотечное оборудование</span>
+							
+						</a>
+					</li>
+					
+					<!-- <div class="production__item">
 						<section class="shek-images">
-							<!-- <h2 class="title shek-images__title">Шнековые спирали</h2> -->
+							<h2 class="title shek-images__title">Шнековые спирали</h2>
 							<div class="shek-images__block">
-								
+								ul.pro
 							</div>
-							<!-- <a href="snek-s.html" class="shek-images__button" target="_blank">Подробнее</a> -->
+							<a href="snek-s.html" class="shek-images__button" target="_blank">Подробнее</a>
 						</section>
-					</div>
+					</div> -->
 					<!-- <li class="production__item">
 						<section class="shek-images">
 							<h2 class="title shek-images__title">Шнековый транспортер в трубе</h2>
@@ -192,7 +266,7 @@
 							<button class="shek-images__button shek-images__button--disabled">Подробнее</button>
 						</section>
 					</li> -->
-				</div>
+				</ul>
 			</div>
 		</section>
 		<section class="information">
@@ -203,14 +277,20 @@
 						О компании
 					</h2>
 					<p class="information__text information__text--header">
-						Добро пожаловать в ХЗЭТТ!
+						Ласкаво просимо в компанію БЦС Сервіс Поділля!
 					</p>
 					<p class="information__text">
-						  ООО ” Хорошевский  завод элеваторной техники и технологий” только начинает свою деятельность на рынке сельскохозяйственной техники. 
+						  Ми пропонуємо ознайомитися з обладнанням українського виробника якісного і надійного зерноочисного обладнання. У нас на сайті можна вибрати і купити віброцентробіжні сепаратори типів БЦС 25, БЦС 50, БЦС 100, а також запчастини до них.
 					</p>
 					<p class="information__text">
-						Наш завод оборудован новой техникой зарубежных технологий, по этому наша продукция соответствует высокому качеству производства. Мы изготавливаем продукцию как оптом так и в розницу. Постоянным покупателям и оптовикам соответствующие предложения и скидки. Девиз ООО ХЗЭТТ – легкость и жесткость,цени каждого и будешь бесценен для всех….
+						Ефективна і швидке очищення зернових культур від домішок, бруду, бур’янів, поділ зерна і насіння за калібром, відсортовує, підготовка до посіву, зберігання, помолу та іншими операціями господарського циклу гарантована за допомогою пропонованого обладнання для очищення зерна. Наші машини мають просту і міцну конструкцію, відрізняються надійністю і довгим терміном експлуатації. Виробництво обладнання ведеться вже більше 10 років, тому воно відповідає необхідним стандартам якості і надійності.
+
 					</p>
+					<!-- <p class="information__text">
+						Ми знаємо, як швидко і якісно провести цикл очищення малого або великого тоннажу зерна, що забезпечить його високі характеристики і товарний вигляд. Запчастини до обладнання завжди є на складі, поставляються швидко, в потрібній номенклатурі, без затримки виробничого процесу.
+
+						Ми працюємо за сучасними стандартами обслуговування покупців, цінуємо ваш час і зберігаємо бюджет, допомагаємо підвищити аграрний потенціал України і домогтися успіху для кожного окремого господарства.
+					</p> -->
 				</div>
 				<div id="reviews" class="information-reviews">
 					<h2 class="information__title">Отзывы</h2>
@@ -376,6 +456,12 @@
 	<script src="js/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> 
 	<script src="js/parallax.js"></script>
+	<script src="js/wow.js"></script>
+    <script>
+	    new WOW({
+	    mobile: false
+	  }).init();
+    </script>
     <script src="js/custom.js"></script>
 </body>
 </html>

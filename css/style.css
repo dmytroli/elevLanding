@@ -181,9 +181,12 @@ ul {
   margin-bottom: 20px;
   z-index: 2; }
 
+/*$main-header__image-width: 175px;
+$main-header__image-height: $main-header__image-width * 0.287;*/
 .main-header__image {
-  width: 175px;
-  height: 50.225px;
+  width: 13%;
+  /*	width: $main-header__image-width;
+	height: $main-header__image-height;*/
   margin-right: 50px;
   margin-top: 0; }
 
@@ -267,9 +270,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -297,11 +300,22 @@ ul {
   font-size: 15px;
   line-height: 30px;
   color: #9b9b9b;
+  padding-left: 35px;
   color: #201966;
   font-weight: bold;
   font-size: 22px;
-  width: 100%;
+  /*width: 100%;*/
   margin: 0; }
+
+.main-header__icon-phone {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 .main-header__phone-image {
   position: absolute;
@@ -355,7 +369,7 @@ ul {
   font-weight: bold;
   padding: 20px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   z-index: 3; }
   .production__title::before {
     position: absolute;
@@ -381,29 +395,113 @@ ul {
     background-color: #59c659; }
 
 .production__list {
-  border-bottom: 1px solid #59c659; }
-
-.production__item {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  width: 100%;
-  padding: 15px;
-  padding-bottom: 80px;
-  margin-bottom: 0;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.production__item {
+  /*	position: relative;*/
+  /*	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;*/
+  width: 250px;
+  /*padding-bottom: 20px;*/
+  margin-bottom: 50px;
   -webkit-box-shadow: none;
   box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   -webkit-transition: all, 0.8s;
   -o-transition: all, 0.8s;
   transition: all, 0.8s;
   background-color: #fff;
   z-index: 3; }
+  .production__item:hover .production__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .production__item:hover {
+    -webkit-box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px gray;
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02); }
+
+.production__link {
+  display: block;
+  width: 250px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.production__imageWrapp {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.production__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-family: "OpenSans-Regular", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgba(89, 198, 89, 0.8);
+  color: #fff; }
+
+/*.production__text--show {
+	display: flex;
+}*/
+.production__image {
+  height: 100%; }
+
+.production__subtitle {
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #59c659;
+  font-family: "OpenSans-Regular", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 /*shnek images*/
 /*fotorama*/
@@ -597,7 +695,7 @@ ul {
   /*margin-top: -100px;*/
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
 
 .advantages__list {
   display: -moz-flex;

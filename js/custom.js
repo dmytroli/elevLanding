@@ -12,19 +12,7 @@ $(function() {
 
 });  
 
-
-// $('.production__item').mouseenter(function(){
-// 	$('.production__item').find('.animated').each(function(i, el){
-// 		console.log($(this));
-// 		if ($(this).hasClass('fadeIn')) {
-// 			$(this).removeClass('fadeIn');
-// 		}
-// 		console.log($(this));
-// 	});
-	
-// 	$(this).find('.animated').addClass('fadeIn');
-// });
-
+/*production text show*/
 $('.production__item').mouseenter(function(){
 	if(!($(this).find('.production__text').hasClass('animated'))) {
 		$(this).find('.production__text').addClass('animated');
@@ -36,10 +24,16 @@ $('.production__item').mouseleave(function(){
 });
 
 
-
-// $('.production__item').mouseout(function(){
-// 	$(this).find('.production__text').removeClass('wow zoomIn');
-// });
-
-
 });
+
+
+function initMap() {
+    var coordinates = {lat:48.896070, lng: 26.862417},
+    
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: coordinates
+        });
+}
+
+
+        

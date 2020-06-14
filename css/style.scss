@@ -1027,6 +1027,23 @@ $services-padding: 50px;
 	
 }
 
+/*map*/
+.elevMap {
+	width: 100%;
+	height: 70vh;
+	overflow: hidden;
+}
+
+.elevMap iframe {
+	width: 100%;
+	height: 100%;
+}
+
+#map {
+	width: 100%;
+	height: 500px;
+}
+
 /*footer*/
 .index-footer {
 	background: #464646;
@@ -1192,26 +1209,12 @@ $services-padding: 50px;
 
 
 @media screen and (max-width: 1024px) {
-	.parallax-window {
-		position: relative;
-		height: auto;
-		min-height: 530px;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		background-position: center center !important;
-	}
-	.title--paralacs {
-		font-size: 35px;
-		margin-bottom: 15px;
-	}
-	
-	.parallax-s__text {
-		font-size: 18px;
-	}
 	.main-header {
-		height: auto;
-		min-height: 250px;
+		min-height: 100px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
+
 	$main-header__image-width: 155px;
 	$main-header__image-height: $main-header__image-width * 0.287;
 	.main-header__image {
@@ -1233,6 +1236,78 @@ $services-padding: 50px;
 		font-size: 12px;
 		letter-spacing: 2px;
 	}
+
+	/*fotorama*/
+	.slider-section {
+		height: 400px;
+		overflow: hidden;
+	}
+	.fotorama {
+		height: auto;
+	}
+
+	.fotorama__wrapp-image {
+		text-align: center;
+	}
+
+	.fotorama__arr--prev, .fotorama__arr--next {
+		top: 35%;
+	}
+
+	.fotorama__text {
+		margin-bottom: 10px;
+		margin-top: 35px;
+
+		font-family: "Gilroy-ExtraBold", sans-serif;
+		font-size: 25px;
+		&--small {
+			font-size: 12px;
+			margin-bottom: 40px;
+		}
+	}
+
+	.shek-images__button {
+		position: static;
+		padding: 10px 20px;
+		&--slider {
+			padding: 10px 20px;	
+		}
+		&:hover {
+			/*transform: scale(1.03);*/
+			box-shadow: 0 0 10px lightgray;
+			color: #000;
+			text-decoration: none;
+	/*		background-image: linear-gradient(to bottom, darken(rgba($site-color, 0.97), 20%) , darken(rgba($site-color, 0.97), 10%));
+	*/
+		}
+		&--disabled {
+			color: #9e9d9b !important;
+			background-image: linear-gradient(to bottom, rgba($site-color, 0.87), lighten(rgba($site-color, 0.87), 20%));
+			&:hover {
+				transform: scale(1);
+				box-shadow: none;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.parallax-window {
+		position: relative;
+		height: auto;
+		min-height: 530px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-position: center center !important;
+	}
+	.title--paralacs {
+		font-size: 35px;
+		margin-bottom: 15px;
+	}
+	
+	.parallax-s__text {
+		font-size: 18px;
+	}
+	
 	.shek-images__wrapp {
 		margin-right: 0;
 	}

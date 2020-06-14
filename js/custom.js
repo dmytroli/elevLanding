@@ -1,8 +1,12 @@
 $(document).ready(function(){
 /*mobile menu*/
 $('.main-navigation .mobile-buttonMenu').on('click', function(){
-	$('.main-header__menu-container').toggleClass('header-menu--close');
+	$('.header-menu ').toggleClass('header-menu--close');
 	$('.index-main').toggleClass('index-main--mobile');
+});
+
+$('.header-menuLink').on('click', function(){
+	$('.header-menu ').addClass('header-menu--close');
 });
 
 $(function() {

@@ -218,7 +218,7 @@ ul {
 
 /*header*/
 .main-header {
-	position: relative;
+	position: sticky;
 	/*background-color: #e3a432;*/
 	background-image: url('../img/bg-sheck2.jpg');
 	
@@ -243,7 +243,6 @@ ul {
 		z-index: 1;
 	}
 }
-
 
 
 .main-header__title-wrapp {
@@ -744,7 +743,7 @@ $production-height: $production-width;
 .advantages__item {
 	width: 200px;
 	padding: 20px 10px;
-	min-height: 200px;
+	min-height: 330px;
 	max-height: 500px;
 	margin-right: 15px;
 	background-color: $site-color;
@@ -1212,6 +1211,14 @@ $section-padding: 50px;
 	}
 }
 
+.icon8 {
+	text-align: center;
+}
+
+.icon8 a {
+	color: #fff;
+}
+
 
 @media screen and (max-width: 1200px) {
 /*	.main-header__title-wrapp {
@@ -1494,6 +1501,10 @@ $section-padding: 50px;
 				text-decoration: none;
 			}
 		}
+	}
+
+	.production__list {
+		justify-content: space-evenly;
 	}
 
 	.index-footer__title {
@@ -1821,13 +1832,14 @@ $section-padding: 50px;
 	}
 
 	.fotorama__arr--prev, .fotorama__arr--next {
-		top: 45%;
+		top: 47%;
 	}
 
 	.advantages__item {
 		width: 45%;
 		margin-right: 0;
 		margin-bottom: 20px;
+		max-height: 250px;
 	}
 
 	.parallax-s__wrapp {
@@ -1982,6 +1994,12 @@ $section-padding: 50px;
 		margin-left: 40px;
 	}
 
+}
+
+@media screen and (max-width: 540px) {
+	.advantages__item {
+		width: 65%;
+	}
 }
 
 @media screen and (max-width: 425px) {
